@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="title-txt">Unit Converter</h1>
+        <p class="subtitle-txt">Enter number:</p>
+        <input type="text" id="number-input-box" placeholder="–" pattern="[0-9]+">
+        <div>
+            <button id="convert-btn" class="btn">CONVERT</button>
+            <button id="clear-btn" class="btn">CLEAR</button>
+        </div>
+    </div>
+
+    <div id="content"> 
+        <div class="conversion-box">
+            <h1 class="heading-txt">Length</h1>
+            <p class="subtitle-txt">Meter/Feet</p>
+            <div class="conversions">
+                <h3 id="m-to-ft" class="conversion-style-box">1 m = 3.281 ft</h3>
+                <h3 id="ft-to-m" class="conversion-style-box">1 ft = 0.305 m</h3>
+            </div> 
+        </div>
+        <div class="conversion-box">
+            <h1 class="heading-txt">Volume</h1>
+            <p class="subtitle-txt">Liters/Gallons</p>
+            <div class="conversions">
+                <h3 id="liters-to-gal" class="conversion-style-box">1 L = 0.264 gal</h3>
+                <h3 id="gal-to-liters" class="conversion-style-box">1 gal = 3.78 L</h3>
+            </div>
+        </div>  
+        <div class="conversion-box">
+            <h1 class="heading-txt">Mass</h1>
+            <p class="subtitle-txt">Kilograms/Pounds</p>
+            <div class="conversions">
+                <h3 id="kg-to-lbs" class="conversion-style-box">1 kg = 2.205 lb</h3>
+                <h3 id="lbs-to-kg" class="conversion-style-box">1 lb = 0.453 kg</h3>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
